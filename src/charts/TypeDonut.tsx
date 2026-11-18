@@ -16,7 +16,7 @@ export function TypeDonut({ movies, series }: TypeDonutProps) {
 
   return (
     <div>
-      <ResponsiveContainer width="100%" height={190}>
+      <ResponsiveContainer width="100%" height={140}>
         <PieChart>
           <Pie
             data={data}

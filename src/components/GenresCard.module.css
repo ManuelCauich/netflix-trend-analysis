@@ -23,7 +23,7 @@
 
 .bars {
   display: grid;
-  gap: 6px;
+  gap: 4px;
 }
 
 .barRow {
@@ -34,9 +34,9 @@
     "bar bar";
   gap: 2px 8px;
   width: 100%;
-  padding: 4px;
+  padding: 2px 4px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 5px;
   background: transparent;
   text-align: left;
 }

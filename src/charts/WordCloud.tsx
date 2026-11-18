@@ -3,7 +3,7 @@ import type { RankedDatum } from "../lib/aggregate.ts";
 import styles from "./WordCloud.module.css";
 
 const WIDTH = 360;
-const HEIGHT = 200;
+const HEIGHT = 150;
 
 // Generador pseudoaleatorio con semilla fija para mantener la nube estable entre renders
 function makeRandom(seed: number): () => number {

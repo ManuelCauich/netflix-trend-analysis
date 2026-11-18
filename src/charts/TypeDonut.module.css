@@ -1,15 +1,15 @@
 .legend {
   display: grid;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 4px;
+  margin-top: 4px;
 }
 
 .row {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  gap: 12px;
-  font-size: 0.875rem;
+  gap: 10px;
+  font-size: 0.75rem;
 }
 
 .row dt {

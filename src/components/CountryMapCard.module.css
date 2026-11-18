@@ -6,7 +6,7 @@
 .layout {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
-  gap: 18px;
+  gap: 14px;
   height: 100%;
 }
 
@@ -17,8 +17,8 @@
 }
 
 .selection {
-  margin-top: 10px;
-  font-size: 0.8125rem;
+  margin-top: 6px;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
@@ -27,29 +27,29 @@
 }
 
 .linkButton {
-  margin-left: 10px;
+  margin-left: 8px;
   padding: 0;
   border: 0;
   background: none;
   color: var(--secondary);
   text-decoration: underline;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
 }
 
 .bases {
   margin-top: auto;
-  padding-top: 10px;
-  font-size: 0.75rem;
+  padding-top: 6px;
+  font-size: 0.6875rem;
   color: var(--text-muted);
 }
 
 .listColumn {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 6px;
   min-width: 0;
   border-left: 1px solid var(--border);
-  padding-left: 16px;
+  padding-left: 12px;
 }
 
 .searchLabel {
@@ -61,16 +61,16 @@
 
 .search {
   width: 100%;
-  padding: 7px 10px;
+  padding: 5px 8px;
   border: 1px solid var(--border);
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--bg);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
 }
 
 .listTitle {
-  margin-top: 4px;
-  font-size: 0.75rem;
+  margin-top: 2px;
+  font-size: 0.6875rem;
   font-weight: 600;
   color: var(--text-muted);
 }
@@ -83,16 +83,16 @@
 
 .listItem {
   display: grid;
-  grid-template-columns: 18px 1fr auto;
+  grid-template-columns: 16px 1fr auto;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   width: 100%;
-  padding: 5px 6px;
+  padding: 3px 6px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 5px;
   background: transparent;
   text-align: left;
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
 }
 
 .listItem:hover {
@@ -108,6 +108,7 @@
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
   text-align: right;
+  font-size: 0.6875rem;
 }
 
 .countryName {
@@ -119,10 +120,11 @@
 .value {
   font-variant-numeric: tabular-nums;
   color: var(--text-muted);
+  font-size: 0.6875rem;
 }
 
 .empty {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 

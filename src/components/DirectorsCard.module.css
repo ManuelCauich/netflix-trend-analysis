@@ -10,8 +10,8 @@
     "rank name value"
     ". bar bar";
   gap: 2px 8px;
-  padding: 5px 4px;
-  border-radius: 6px;
+  padding: 3px 4px;
+  border-radius: 5px;
 }
 
 .item:hover {

@@ -23,7 +23,7 @@ export function TrendLine({ series, mode, yearRange }: TrendLineProps) {
   const [from, to] = yearRange;
 
   return (
-    <ResponsiveContainer width="100%" height={240}>
+    <ResponsiveContainer width="100%" height={175}>
       <LineChart data={series} margin={{ top: 8, right: 16, bottom: 4, left: 0 }}>
         <CartesianGrid stroke="var(--border)" strokeDasharray="3 3" vertical={false} />
         <XAxis

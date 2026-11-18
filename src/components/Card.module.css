@@ -1,9 +1,9 @@
 .card {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   min-width: 0;
-  padding: 16px 18px 18px;
+  padding: 12px 14px 14px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -13,31 +13,31 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 12px;
+  gap: 10px;
 }
 
 .title {
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
 
 .card[data-level="1"] .title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .card[data-level="3"] .title {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
 }
 
 .hint {
-  margin-top: 2px;
-  font-size: 0.75rem;
+  margin-top: 1px;
+  font-size: 0.6875rem;
   color: var(--text-muted);
 }
 
@@ -52,9 +52,9 @@
 
 .body > details > summary {
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.6875rem;
   color: var(--text-muted);
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .body > details table {
