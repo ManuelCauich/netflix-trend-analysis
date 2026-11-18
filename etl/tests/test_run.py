@@ -1,9 +1,4 @@
-"""Pruebas de las funciones puras de `etl/run.py`.
-
-No tocan PostgreSQL: validan limpieza, configuración de países y las cifras
-de control que después se comprueban en la base. Las que necesitan el CSV se
-saltan si no está descargado.
-"""
+"""Pruebas unitarias para etl/run.py."""
 
 from __future__ import annotations
 
@@ -13,9 +8,7 @@ from pathlib import Path
 
 import pytest
 
-# ---------------------------------------------------------------------------
-# Utilidades de limpieza
-# ---------------------------------------------------------------------------
+# Limpieza
 
 
 def test_split_multi_quita_espacios_y_comas_sobrantes(etl) -> None:
@@ -50,9 +43,7 @@ def test_parse_duration_rechaza_valores_raros(etl) -> None:
         etl.parse_duration("90")
 
 
-# ---------------------------------------------------------------------------
-# aliases.csv
-# ---------------------------------------------------------------------------
+# Aliases y mapeo geográfico
 
 
 def test_aliases_tiene_122_etiquetas_y_119_canonicos(aliases) -> None:
@@ -86,9 +77,7 @@ def test_todas_las_regiones_son_conocidas(etl, aliases) -> None:
         assert row["region"] in etl.REGION_ORDER
 
 
-# ---------------------------------------------------------------------------
-# CSV real: cifras de control
-# ---------------------------------------------------------------------------
+# Cifras de control sobre el CSV
 
 
 def test_validate_frame_acepta_el_csv_real(etl, frame, csv_path: Path) -> None:
@@ -173,9 +162,7 @@ def test_todos_los_paises_del_csv_estan_en_aliases(etl, frame, aliases) -> None:
     assert labels == known
 
 
-# ---------------------------------------------------------------------------
-# JSON derivado
-# ---------------------------------------------------------------------------
+# Exportación de JSON
 
 
 def test_build_meta_produce_119_paises_y_siete_regiones(etl, aliases) -> None:

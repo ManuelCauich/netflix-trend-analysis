@@ -8,7 +8,7 @@
   --text-muted: #b3b3b3;
   --border: #333333;
 
-  /* Escala secuencial del mapa: cinco tramos de menos a más. */
+  /* Escala de color del mapa coroplético */
   --map-0: #242424;
   --map-1: #4a1418;
   --map-2: #7a1a1f;

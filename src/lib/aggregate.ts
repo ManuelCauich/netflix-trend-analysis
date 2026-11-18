@@ -17,7 +17,7 @@ export interface YearDatum {
   value: number;
 }
 
-/** Títulos por país canónico; un título multipaís cuenta una vez por país. */
+// Agrupa títulos por país canónico (los multipaís cuentan una vez en cada país)
 export function countryCounts(
   titles: Title[],
   countriesByIso: Map<string, CountryMeta>,
@@ -43,7 +43,7 @@ export function countryCounts(
     .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name, "es"));
 }
 
-/** Serie anual completa: los años sin títulos valen cero, no faltan. */
+// Serie anual completa rellenando con 0 los años intermedios vacíos
 export function yearlySeries(
   titles: Title[],
   mode: YearMode,
@@ -96,7 +96,7 @@ export function allGenres(titles: Title[]): RankedDatum[] {
     .sort((a, b) => b.value - a.value || a.name.localeCompare(b.name, "es"));
 }
 
-/** Los títulos sin director no entran: “Desconocido” queda fuera del ranking. */
+// Excluye títulos sin director del ranking
 export function topDirectors(titles: Title[], limit = 5): RankedDatum[] {
   const counts = new Map<string, number>();
   for (const title of titles) {

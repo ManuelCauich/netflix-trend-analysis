@@ -13,13 +13,7 @@ function readJson(path: string): unknown {
   return JSON.parse(readFileSync(path, "utf8")) as unknown;
 }
 
-/**
- * Contrato real entre el ETL y la aplicación.
- *
- * `meta.json` y `titles.json` se versionan, así que estas pruebas corren en un
- * clon limpio. Si alguien borra los JSON (por ejemplo, tras un `git clean`),
- * se saltan en lugar de fallar: el ETL es quien debe regenerarlos.
- */
+// Pruebas sobre los JSON exportados por el ETL (se saltan si los archivos no existen)
 describe.skipIf(!hasData)("datos exportados por el ETL", () => {
   const meta = hasData ? metaSchema.parse(readJson(META_PATH)) : null;
   const titles = hasData ? titlesSchema.parse(readJson(TITLES_PATH)) : [];

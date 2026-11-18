@@ -12,13 +12,7 @@ async function fetchJson(url: string, signal?: AbortSignal): Promise<unknown> {
   return response.json();
 }
 
-/**
- * Carga `meta.json` y `titles.json` desde `public/data`.
- *
- * Si todavía no existen —el ETL no se ha ejecutado— devuelve el conjunto de
- * ejemplo y la interfaz lo avisa. Nunca se mezclan: o son los dos JSON reales
- * o es el fixture completo.
- */
+// Carga los datos generados por el ETL o cae al fixture si aún no existen los JSON
 export async function loadDataset(signal?: AbortSignal): Promise<Dataset> {
   try {
     const [rawMeta, rawTitles] = await Promise.all([

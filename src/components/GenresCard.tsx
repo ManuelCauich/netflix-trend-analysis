@@ -21,7 +21,7 @@ export function GenresCard({ top, all, selected, onSelect, cloudLimit }: GenresC
   return (
     <Card
       title="Géneros"
-      hint="KPI secundario · un título puede tener hasta tres géneros"
+      hint="KPI secundario · Un título puede tener hasta tres géneros"
       actions={
         <div className={styles.tabs} role="tablist" aria-label="Vista de géneros">
           <button

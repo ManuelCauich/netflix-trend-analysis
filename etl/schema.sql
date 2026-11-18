@@ -8,9 +8,7 @@
 DROP SCHEMA IF EXISTS public CASCADE;
 CREATE SCHEMA public;
 
--- ---------------------------------------------------------------------------
 -- Catálogos
--- ---------------------------------------------------------------------------
 
 CREATE TABLE regions (
   region_id  smallint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -44,9 +42,7 @@ CREATE TABLE directors (
   name        text NOT NULL UNIQUE
 );
 
--- ---------------------------------------------------------------------------
 -- Títulos y tablas puente
--- ---------------------------------------------------------------------------
 
 CREATE TABLE titles (
   show_id        text PRIMARY KEY,
@@ -97,9 +93,7 @@ CREATE TABLE title_directors (
 
 CREATE INDEX title_directors_director_idx ON title_directors (director_id);
 
--- ---------------------------------------------------------------------------
--- Trazabilidad
--- ---------------------------------------------------------------------------
+-- Trazabilidad del proceso
 
 CREATE TABLE etl_runs (
   run_id        bigint GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
@@ -112,10 +106,7 @@ CREATE TABLE etl_runs (
   notes         jsonb
 );
 
--- ---------------------------------------------------------------------------
--- Vistas de control: sirven para validar los totales y documentar las
--- consultas. El frontend no las consulta; recibe los JSON exportados.
--- ---------------------------------------------------------------------------
+-- Vistas de control para validación de totales
 
 CREATE VIEW v_titles_by_country AS
 WITH base AS (

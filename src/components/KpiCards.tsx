@@ -26,12 +26,12 @@ export function KpiCards({
     {
       label: "Títulos en la selección",
       value: formatNumber(selection),
-      note: `de ${formatNumber(total)} en el catálogo`,
+      note: `De ${formatNumber(total)} en el catálogo`,
     },
     {
       label: "Países y territorios",
       value: formatNumber(countries),
-      note: "canónicos con al menos un título",
+      note: "Canónicos con al menos un título",
     },
     {
       label: "Películas y series",
@@ -41,7 +41,7 @@ export function KpiCards({
     {
       label: mode === "release" ? "Año con más estrenos" : "Año con más ingresos",
       value: peak ? String(peak.year) : "—",
-      note: peak ? `${formatNumber(peak.value)} títulos` : "sin datos en el rango",
+      note: peak ? `${formatNumber(peak.value)} títulos` : "Sin datos en el rango",
     },
   ];
 

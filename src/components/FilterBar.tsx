@@ -201,7 +201,7 @@ export function FilterBar({
           <p className={styles.countryValue}>
             {filters.country
               ? (countriesByIso.get(filters.country)?.name ?? filters.country)
-              : "Todos · elige en el mapa"}
+              : "Todos · Elige en el mapa"}
           </p>
         </div>
       </div>

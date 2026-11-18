@@ -11,7 +11,7 @@ export function Header({ mode, rows, generatedAt }: HeaderProps) {
   return (
     <header className={styles.header}>
       <div>
-        <p className={styles.eyebrow}>Dashboard estratégico · catálogo de Netflix</p>
+        <p className={styles.eyebrow}>Dashboard estratégico · Catálogo de Netflix</p>
         <h1 className={styles.title}>Tendencias del catálogo de Netflix</h1>
         <p className={styles.subtitle}>
           Qué produce y qué incorpora la plataforma: países, géneros y evolución por año.
@@ -25,7 +25,7 @@ export function Header({ mode, rows, generatedAt }: HeaderProps) {
           </p>
         ) : (
           <p className={styles.source}>
-            {new Intl.NumberFormat("es-MX").format(rows)} títulos · actualizado{" "}
+            {new Intl.NumberFormat("es-MX").format(rows)} títulos · Actualizado{" "}
             {new Intl.DateTimeFormat("es-MX", { dateStyle: "medium" }).format(
               new Date(generatedAt),
             )}

@@ -5,7 +5,7 @@ import styles from "./WordCloud.module.css";
 const WIDTH = 360;
 const HEIGHT = 200;
 
-/** Generador con semilla fija: la nube no baila entre renders. */
+// Generador pseudoaleatorio con semilla fija para mantener la nube estable entre renders
 function makeRandom(seed: number): () => number {
   let state = seed >>> 0;
   return () => {

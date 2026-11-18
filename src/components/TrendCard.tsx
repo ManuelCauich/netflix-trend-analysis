@@ -18,7 +18,7 @@ export function TrendCard({ series, mode, yearRange, total }: TrendCardProps) {
   return (
     <Card
       title={isRelease ? "Evolución de estrenos por año" : "Evolución de ingresos por año"}
-      hint={`KPI secundario · ${isRelease ? "año de estreno" : "año de ingreso al catálogo"} · ${formatNumber(total)} títulos en el rango`}
+      hint={`KPI secundario · ${isRelease ? "Año de estreno" : "Año de ingreso al catálogo"} · ${formatNumber(total)} títulos en el rango`}
       className={styles.card}
     >
       <TrendLine series={series} mode={mode} yearRange={yearRange} />

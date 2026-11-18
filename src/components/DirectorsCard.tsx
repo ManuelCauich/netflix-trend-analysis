@@ -14,7 +14,7 @@ export function DirectorsCard({ top, withoutDirector }: DirectorsCardProps) {
   return (
     <Card
       title="Directores"
-      hint="KPI secundario · top 5; los títulos sin director no entran"
+      hint="KPI secundario · Top 5 (los títulos sin director quedan fuera)"
       level={3}
     >
       {top.length === 0 ? (

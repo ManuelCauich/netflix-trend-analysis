@@ -1,13 +1,7 @@
 import type { CountryMeta, Dataset, Meta, Title, TitleType } from "./types.ts";
 import { REGIONS } from "./types.ts";
 
-/**
- * Conjunto de ejemplo, generado con una semilla fija.
- *
- * No son cifras del catálogo: sirven para montar y probar la interfaz antes de
- * ejecutar el ETL. La aplicación muestra un aviso visible mientras se use este
- * conjunto, y lo sustituye por `public/data/*.json` en cuanto existen.
- */
+// Dataset sintético para pruebas unitarias y desarrollo visual sin los JSON generados
 
 const COUNTRIES: Array<Pick<CountryMeta, "name" | "iso3" | "isoNumeric" | "region"> & { weight: number }> = [
   { name: "United States", iso3: "USA", isoNumeric: "840", region: "Norteamérica", weight: 40 },
@@ -93,7 +87,7 @@ function pickWeighted(): CountryMeta["iso3"] {
   return COUNTRIES[0]!.iso3;
 }
 
-/** Años recientes con más peso, como en el catálogo real. */
+// Pondera años recientes para aproximarse a la distribución real
 function pickReleaseYear(): number {
   const biased = Math.pow(random(), 0.45);
   const year = FIRST_YEAR + Math.floor(biased * (LAST_YEAR - FIRST_YEAR + 1));

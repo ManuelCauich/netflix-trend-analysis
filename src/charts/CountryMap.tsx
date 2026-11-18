@@ -13,10 +13,10 @@ const HEIGHT = 330;
 const ANTARCTICA = "010";
 
 const MAP_STEPS = [
-  { limit: 0.05, color: "var(--map-1)", label: "menos" },
+  { limit: 0.05, color: "var(--map-1)", label: "Menos" },
   { limit: 0.2, color: "var(--map-2)", label: "" },
   { limit: 0.5, color: "var(--map-3)", label: "" },
-  { limit: 1, color: "var(--map-4)", label: "más" },
+  { limit: 1, color: "var(--map-4)", label: "Más" },
 ];
 
 function stepColor(value: number, max: number): string {
@@ -150,13 +150,13 @@ export function CountryMap({
         role="group"
         aria-label={`Mapa de títulos por país. ${data.length} países con títulos.`}
       >
-        {features.map((item) => {
+        {features.map((item, index) => {
           const numeric = String(item.id ?? "").padStart(3, "0");
           const country = isoByNumeric.get(numeric);
           if (!country) {
             return (
               <path
-                key={`unknown-${numeric}-${item.properties?.name ?? ""}`}
+                key={`unknown-${numeric}-${item.properties?.name ?? ""}-${index}`}
                 d={countryPath(item.geometry)}
                 className={styles.unknown}
                 aria-hidden="true"
@@ -171,7 +171,7 @@ export function CountryMap({
 
           return (
             <path
-              key={country.iso3}
+              key={`${country.iso3}-${index}`}
               d={countryPath(item.geometry)}
               className={styles.country}
               data-selected={isSelected || undefined}
@@ -206,7 +206,7 @@ export function CountryMap({
 
       <div className={styles.legend}>
         <span>{MAP_STEPS[0]?.label}</span>
-        <span className={styles.swatch} style={{ background: "var(--map-0)" }} title="sin títulos" />
+        <span className={styles.swatch} style={{ background: "var(--map-0)" }} title="Sin títulos" />
         {MAP_STEPS.map((step) => (
           <span
             key={step.color}
@@ -215,7 +215,7 @@ export function CountryMap({
           />
         ))}
         <span>{MAP_STEPS[MAP_STEPS.length - 1]?.label}</span>
-        <span className={styles.legendNote}>gris: sin títulos o sin datos</span>
+        <span className={styles.legendNote}>Gris: sin títulos o sin datos</span>
       </div>
     </div>
   );

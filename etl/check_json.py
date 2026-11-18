@@ -1,15 +1,5 @@
 #!/usr/bin/env python3
-"""Valida los JSON publicados sin necesidad de PostgreSQL.
-
-Comprueba que `public/data/meta.json` y `public/data/titles.json` cumplen el
-contrato del frontend y que sus totales cuadran entre sí y con las cifras de
-control del dataset. Es la última barrera antes de publicar: si esto pasa, la
-aplicación puede cargar los datos.
-
-Uso:
-    python etl/check_json.py
-    npm run data:check
-"""
+"""Valida que los JSON generados en public/data cumplan el esquema y los totales de control."""
 
 from __future__ import annotations
 

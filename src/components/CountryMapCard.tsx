@@ -58,7 +58,7 @@ export function CountryMapCard({
   return (
     <Card
       title="Títulos por país"
-      hint="KPI principal · un título multipaís cuenta una vez por país"
+      hint="KPI principal · Un título multipaís cuenta una vez por país"
       level={1}
       className={styles.card}
     >
@@ -100,13 +100,13 @@ export function CountryMapCard({
             id="country-search"
             type="search"
             className={styles.search}
-            placeholder="Nombre del país"
+            placeholder="Buscar país..."
             value={query}
             onChange={(event) => setQuery(event.target.value)}
           />
 
           <h3 className={styles.listTitle}>
-            {normalized ? "Coincidencias" : "Diez países con más títulos"}
+            {normalized ? "Coincidencias" : "Top 10 países con más títulos"}
           </h3>
 
           {list.length === 0 ? (

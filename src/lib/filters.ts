@@ -9,7 +9,7 @@ export interface Filters {
   country: string | null;
 }
 
-/** Dimensión que un gráfico ignora para no anularse a sí mismo. */
+// Dimensiones que un componente puede excluir al filtrar para conservar su propia distribución
 export type Dimension = "type" | "year" | "region" | "genre" | "country";
 
 export type ActiveChip = {

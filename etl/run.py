@@ -1,20 +1,5 @@
 #!/usr/bin/env python3
-"""CSV → limpieza → PostgreSQL → JSON estático.
-
-Una sola corrida hace todo:
-
-1. Lee `data/raw/netflix_titles.csv` (o la ruta de `--csv`).
-2. Limpia comas sobrantes, fechas, duración y tipo.
-3. Borra y recrea el esquema de `netflix_dashboard` con `etl/schema.sql`.
-4. Carga títulos, países, regiones, géneros y directores.
-5. Comprueba los totales contra las cifras de control y corta si no cuadran.
-6. Exporta `public/data/meta.json` y `public/data/titles.json`.
-
-Es idempotente: dos corridas seguidas producen los mismos totales.
-
-Uso:
-    python etl/run.py --csv data/raw/netflix_titles.csv
-"""
+"""Pipeline ETL para el catálogo de Netflix: CSV -> PostgreSQL -> JSON estático."""
 
 from __future__ import annotations
 
