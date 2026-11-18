@@ -1,0 +1,76 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 16px 18px 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.card[data-level="1"] .title {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.card[data-level="3"] .title {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hint {
+  margin-top: 2px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.actions {
+  flex-shrink: 0;
+}
+
+.body {
+  flex: 1;
+  min-height: 0;
+}
+
+.body > details > summary {
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.body > details table {
+  margin-top: 8px;
+  font-size: 0.75rem;
+}
+
+.body > details th,
+.body > details td {
+  padding: 4px 6px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+}
+
+.body > details td:last-child,
+.body > details th:last-child {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

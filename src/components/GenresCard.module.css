@@ -1,0 +1,89 @@
+.tabs {
+  display: inline-flex;
+  padding: 2px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+}
+
+.tab {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+
+.tab[aria-selected="true"] {
+  background: var(--surface-2);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.bars {
+  display: grid;
+  gap: 6px;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 26px;
+  grid-template-areas:
+    "label value"
+    "bar bar";
+  gap: 2px 8px;
+  width: 100%;
+  padding: 4px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  text-align: left;
+}
+
+.barRow:hover {
+  background: var(--surface-2);
+}
+
+.barLabel {
+  grid-area: label;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 0.8125rem;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rank {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  grid-area: bar;
+  height: 6px;
+  border-radius: 999px;
+  transition: width 180ms ease;
+}
+
+.barValue {
+  grid-area: value;
+  text-align: right;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.empty,
+.note {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.note {
+  margin-top: 8px;
+}

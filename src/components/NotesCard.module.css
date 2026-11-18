@@ -1,0 +1,40 @@
+.card {
+  grid-column: span 3;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.heading {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.list {
+  display: grid;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 1023px) {
+  .card {
+    grid-column: span 2;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .card {
+    grid-column: span 1;
+  }
+}

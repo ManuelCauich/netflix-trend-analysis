@@ -1,0 +1,25 @@
+:root {
+  --bg: #141414;
+  --surface: #1f1f1f;
+  --surface-2: #2a2a2a;
+  --accent: #e50914;
+  --secondary: #4c9be8;
+  --text: #f5f5f1;
+  --text-muted: #b3b3b3;
+  --border: #333333;
+
+  /* Escala secuencial del mapa: cinco tramos de menos a más. */
+  --map-0: #242424;
+  --map-1: #4a1418;
+  --map-2: #7a1a1f;
+  --map-3: #a8151c;
+  --map-4: #e50914;
+
+  --radius: 10px;
+  --gap: 20px;
+
+  --font: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-display: "Bebas Neue", "Oswald", "Inter", system-ui, sans-serif;
+
+  color-scheme: dark;
+}

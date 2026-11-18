@@ -1,0 +1,909 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-18T07:41:41Z",
+  "source": {
+    "file": "netflix_titles.csv",
+    "sha256": "df1f4ad2027a5a14c3a33932ef0d4054565ff88adf92b7f263601b70fdc6f3f3",
+    "rows": 8807,
+    "license": "CC0"
+  },
+  "defaultYearMode": "release",
+  "totals": {
+    "titles": 8807,
+    "movies": 6131,
+    "series": 2676,
+    "withCountry": 7976,
+    "withoutCountry": 831,
+    "withDirector": 6173,
+    "withoutDirector": 2634,
+    "countryLabels": 122,
+    "countries": 119,
+    "multiCountryTitles": 1315,
+    "countryOccurrences": 10012,
+    "canonicalCountryPairs": 10011,
+    "genres": 42
+  },
+  "bases": {
+    "country": 7976,
+    "director": 6173,
+    "genre": "títulos; un título puede tener hasta 3 géneros",
+    "region": "títulos con al menos un país de la región"
+  },
+  "regions": [
+    {
+      "name": "Norteamérica",
+      "order": 1
+    },
+    {
+      "name": "Latinoamérica y Caribe",
+      "order": 2
+    },
+    {
+      "name": "Europa",
+      "order": 3
+    },
+    {
+      "name": "África",
+      "order": 4
+    },
+    {
+      "name": "Medio Oriente",
+      "order": 5
+    },
+    {
+      "name": "Asia",
+      "order": 6
+    },
+    {
+      "name": "Oceanía",
+      "order": 7
+    }
+  ],
+  "countries": [
+    {
+      "name": "Afghanistan",
+      "iso3": "AFG",
+      "isoNumeric": "004",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Albania",
+      "iso3": "ALB",
+      "isoNumeric": "008",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Algeria",
+      "iso3": "DZA",
+      "isoNumeric": "012",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Angola",
+      "iso3": "AGO",
+      "isoNumeric": "024",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Argentina",
+      "iso3": "ARG",
+      "isoNumeric": "032",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Armenia",
+      "iso3": "ARM",
+      "isoNumeric": "051",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Australia",
+      "iso3": "AUS",
+      "isoNumeric": "036",
+      "region": "Oceanía",
+      "aliases": []
+    },
+    {
+      "name": "Austria",
+      "iso3": "AUT",
+      "isoNumeric": "040",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Azerbaijan",
+      "iso3": "AZE",
+      "isoNumeric": "031",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Bahamas",
+      "iso3": "BHS",
+      "isoNumeric": "044",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Bangladesh",
+      "iso3": "BGD",
+      "isoNumeric": "050",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Belarus",
+      "iso3": "BLR",
+      "isoNumeric": "112",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Belgium",
+      "iso3": "BEL",
+      "isoNumeric": "056",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Bermuda",
+      "iso3": "BMU",
+      "isoNumeric": "060",
+      "region": "Norteamérica",
+      "aliases": []
+    },
+    {
+      "name": "Botswana",
+      "iso3": "BWA",
+      "isoNumeric": "072",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Brazil",
+      "iso3": "BRA",
+      "isoNumeric": "076",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Bulgaria",
+      "iso3": "BGR",
+      "isoNumeric": "100",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Burkina Faso",
+      "iso3": "BFA",
+      "isoNumeric": "854",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Cambodia",
+      "iso3": "KHM",
+      "isoNumeric": "116",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Cameroon",
+      "iso3": "CMR",
+      "isoNumeric": "120",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Canada",
+      "iso3": "CAN",
+      "isoNumeric": "124",
+      "region": "Norteamérica",
+      "aliases": []
+    },
+    {
+      "name": "Cayman Islands",
+      "iso3": "CYM",
+      "isoNumeric": "136",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Chile",
+      "iso3": "CHL",
+      "isoNumeric": "152",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "China",
+      "iso3": "CHN",
+      "isoNumeric": "156",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Colombia",
+      "iso3": "COL",
+      "isoNumeric": "170",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Croatia",
+      "iso3": "HRV",
+      "isoNumeric": "191",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Cuba",
+      "iso3": "CUB",
+      "isoNumeric": "192",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Cyprus",
+      "iso3": "CYP",
+      "isoNumeric": "196",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Czech Republic",
+      "iso3": "CZE",
+      "isoNumeric": "203",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Denmark",
+      "iso3": "DNK",
+      "isoNumeric": "208",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Dominican Republic",
+      "iso3": "DOM",
+      "isoNumeric": "214",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Ecuador",
+      "iso3": "ECU",
+      "isoNumeric": "218",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Egypt",
+      "iso3": "EGY",
+      "isoNumeric": "818",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Ethiopia",
+      "iso3": "ETH",
+      "isoNumeric": "231",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Finland",
+      "iso3": "FIN",
+      "isoNumeric": "246",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "France",
+      "iso3": "FRA",
+      "isoNumeric": "250",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Georgia",
+      "iso3": "GEO",
+      "isoNumeric": "268",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Germany",
+      "iso3": "DEU",
+      "isoNumeric": "276",
+      "region": "Europa",
+      "aliases": [
+        "East Germany",
+        "West Germany"
+      ]
+    },
+    {
+      "name": "Ghana",
+      "iso3": "GHA",
+      "isoNumeric": "288",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Greece",
+      "iso3": "GRC",
+      "isoNumeric": "300",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Guatemala",
+      "iso3": "GTM",
+      "isoNumeric": "320",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Hong Kong",
+      "iso3": "HKG",
+      "isoNumeric": "344",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Hungary",
+      "iso3": "HUN",
+      "isoNumeric": "348",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Iceland",
+      "iso3": "ISL",
+      "isoNumeric": "352",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "India",
+      "iso3": "IND",
+      "isoNumeric": "356",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Indonesia",
+      "iso3": "IDN",
+      "isoNumeric": "360",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Iran",
+      "iso3": "IRN",
+      "isoNumeric": "364",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Iraq",
+      "iso3": "IRQ",
+      "isoNumeric": "368",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Ireland",
+      "iso3": "IRL",
+      "isoNumeric": "372",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Israel",
+      "iso3": "ISR",
+      "isoNumeric": "376",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Italy",
+      "iso3": "ITA",
+      "isoNumeric": "380",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Jamaica",
+      "iso3": "JAM",
+      "isoNumeric": "388",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Japan",
+      "iso3": "JPN",
+      "isoNumeric": "392",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Jordan",
+      "iso3": "JOR",
+      "isoNumeric": "400",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Kazakhstan",
+      "iso3": "KAZ",
+      "isoNumeric": "398",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Kenya",
+      "iso3": "KEN",
+      "isoNumeric": "404",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Kuwait",
+      "iso3": "KWT",
+      "isoNumeric": "414",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Latvia",
+      "iso3": "LVA",
+      "isoNumeric": "428",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Lebanon",
+      "iso3": "LBN",
+      "isoNumeric": "422",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Liechtenstein",
+      "iso3": "LIE",
+      "isoNumeric": "438",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Lithuania",
+      "iso3": "LTU",
+      "isoNumeric": "440",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Luxembourg",
+      "iso3": "LUX",
+      "isoNumeric": "442",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Malawi",
+      "iso3": "MWI",
+      "isoNumeric": "454",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Malaysia",
+      "iso3": "MYS",
+      "isoNumeric": "458",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Malta",
+      "iso3": "MLT",
+      "isoNumeric": "470",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Mauritius",
+      "iso3": "MUS",
+      "isoNumeric": "480",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Mexico",
+      "iso3": "MEX",
+      "isoNumeric": "484",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Mongolia",
+      "iso3": "MNG",
+      "isoNumeric": "496",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Montenegro",
+      "iso3": "MNE",
+      "isoNumeric": "499",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Morocco",
+      "iso3": "MAR",
+      "isoNumeric": "504",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Mozambique",
+      "iso3": "MOZ",
+      "isoNumeric": "508",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Namibia",
+      "iso3": "NAM",
+      "isoNumeric": "516",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Nepal",
+      "iso3": "NPL",
+      "isoNumeric": "524",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Netherlands",
+      "iso3": "NLD",
+      "isoNumeric": "528",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "New Zealand",
+      "iso3": "NZL",
+      "isoNumeric": "554",
+      "region": "Oceanía",
+      "aliases": []
+    },
+    {
+      "name": "Nicaragua",
+      "iso3": "NIC",
+      "isoNumeric": "558",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Nigeria",
+      "iso3": "NGA",
+      "isoNumeric": "566",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Norway",
+      "iso3": "NOR",
+      "isoNumeric": "578",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Pakistan",
+      "iso3": "PAK",
+      "isoNumeric": "586",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Palestine",
+      "iso3": "PSE",
+      "isoNumeric": "275",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Panama",
+      "iso3": "PAN",
+      "isoNumeric": "591",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Paraguay",
+      "iso3": "PRY",
+      "isoNumeric": "600",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Peru",
+      "iso3": "PER",
+      "isoNumeric": "604",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Philippines",
+      "iso3": "PHL",
+      "isoNumeric": "608",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Poland",
+      "iso3": "POL",
+      "isoNumeric": "616",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Portugal",
+      "iso3": "PRT",
+      "isoNumeric": "620",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Puerto Rico",
+      "iso3": "PRI",
+      "isoNumeric": "630",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Qatar",
+      "iso3": "QAT",
+      "isoNumeric": "634",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Romania",
+      "iso3": "ROU",
+      "isoNumeric": "642",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Russia",
+      "iso3": "RUS",
+      "isoNumeric": "643",
+      "region": "Europa",
+      "aliases": [
+        "Soviet Union"
+      ]
+    },
+    {
+      "name": "Samoa",
+      "iso3": "WSM",
+      "isoNumeric": "882",
+      "region": "Oceanía",
+      "aliases": []
+    },
+    {
+      "name": "Saudi Arabia",
+      "iso3": "SAU",
+      "isoNumeric": "682",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Senegal",
+      "iso3": "SEN",
+      "isoNumeric": "686",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Serbia",
+      "iso3": "SRB",
+      "isoNumeric": "688",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Singapore",
+      "iso3": "SGP",
+      "isoNumeric": "702",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Slovakia",
+      "iso3": "SVK",
+      "isoNumeric": "703",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Slovenia",
+      "iso3": "SVN",
+      "isoNumeric": "705",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Somalia",
+      "iso3": "SOM",
+      "isoNumeric": "706",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "South Africa",
+      "iso3": "ZAF",
+      "isoNumeric": "710",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "South Korea",
+      "iso3": "KOR",
+      "isoNumeric": "410",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Spain",
+      "iso3": "ESP",
+      "isoNumeric": "724",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Sri Lanka",
+      "iso3": "LKA",
+      "isoNumeric": "144",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Sudan",
+      "iso3": "SDN",
+      "isoNumeric": "729",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Sweden",
+      "iso3": "SWE",
+      "isoNumeric": "752",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Switzerland",
+      "iso3": "CHE",
+      "isoNumeric": "756",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Syria",
+      "iso3": "SYR",
+      "isoNumeric": "760",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Taiwan",
+      "iso3": "TWN",
+      "isoNumeric": "158",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Thailand",
+      "iso3": "THA",
+      "isoNumeric": "764",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Turkey",
+      "iso3": "TUR",
+      "isoNumeric": "792",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "Uganda",
+      "iso3": "UGA",
+      "isoNumeric": "800",
+      "region": "África",
+      "aliases": []
+    },
+    {
+      "name": "Ukraine",
+      "iso3": "UKR",
+      "isoNumeric": "804",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "United Arab Emirates",
+      "iso3": "ARE",
+      "isoNumeric": "784",
+      "region": "Medio Oriente",
+      "aliases": []
+    },
+    {
+      "name": "United Kingdom",
+      "iso3": "GBR",
+      "isoNumeric": "826",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "United States",
+      "iso3": "USA",
+      "isoNumeric": "840",
+      "region": "Norteamérica",
+      "aliases": []
+    },
+    {
+      "name": "Uruguay",
+      "iso3": "URY",
+      "isoNumeric": "858",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Vatican City",
+      "iso3": "VAT",
+      "isoNumeric": "336",
+      "region": "Europa",
+      "aliases": []
+    },
+    {
+      "name": "Venezuela",
+      "iso3": "VEN",
+      "isoNumeric": "862",
+      "region": "Latinoamérica y Caribe",
+      "aliases": []
+    },
+    {
+      "name": "Vietnam",
+      "iso3": "VNM",
+      "isoNumeric": "704",
+      "region": "Asia",
+      "aliases": []
+    },
+    {
+      "name": "Zimbabwe",
+      "iso3": "ZWE",
+      "isoNumeric": "716",
+      "region": "África",
+      "aliases": []
+    }
+  ],
+  "notes": [
+    "122 etiquetas de país en el CSV; 119 países y territorios canónicos.",
+    "Alemania Occidental/Oriental se agrupan con Alemania y la Unión Soviética con Rusia; por eso las 10,012 menciones de país del CSV quedan en 10,011 pares título–país.",
+    "831 títulos no tienen país y no aparecen en el mapa.",
+    "10 títulos no tienen fecha de ingreso y se excluyen del modo «ingreso».",
+    "2021 está incompleto en altas: el archivo llega al 25 de septiembre de 2021."
+  ]
+}

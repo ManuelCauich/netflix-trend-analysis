@@ -1,0 +1,24 @@
+.card {
+  grid-column: span 2;
+}
+
+.warning {
+  margin-top: 8px;
+  padding: 8px 10px;
+  border-left: 3px solid var(--secondary);
+  background: color-mix(in srgb, var(--secondary) 10%, transparent);
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+@media (max-width: 1023px) {
+  .card {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 639px) {
+  .card {
+    grid-column: span 1;
+  }
+}

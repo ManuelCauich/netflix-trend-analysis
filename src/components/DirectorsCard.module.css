@@ -1,0 +1,60 @@
+.list {
+  display: grid;
+  gap: 2px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) auto;
+  grid-template-areas:
+    "rank name value"
+    ". bar bar";
+  gap: 2px 8px;
+  padding: 5px 4px;
+  border-radius: 6px;
+}
+
+.item:hover {
+  background: var(--surface-2);
+}
+
+.rank {
+  grid-area: rank;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.name {
+  grid-area: name;
+  font-size: 0.8125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.value {
+  grid-area: value;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar {
+  grid-area: bar;
+  height: 5px;
+  border-radius: 999px;
+  background: var(--accent);
+  opacity: 0.75;
+}
+
+.empty {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.note {
+  margin-top: 10px;
+  font-size: 0.6875rem;
+  color: var(--text-muted);
+}
