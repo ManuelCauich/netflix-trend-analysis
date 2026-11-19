@@ -11,7 +11,7 @@ export function TypeDonutCard({ movies, series }: TypeDonutCardProps) {
   const total = movies + series;
 
   return (
-    <Card title="Películas y series" hint="KPI secundario · Sobre la selección actual">
+    <Card title="Películas y series" hint="Sobre la selección actual">
       <TypeDonut movies={movies} series={series} />
       <details>
         <summary>Ver datos</summary>

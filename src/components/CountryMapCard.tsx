@@ -58,7 +58,7 @@ export function CountryMapCard({
   return (
     <Card
       title="Títulos por país"
-      hint="KPI principal · Un título multipaís cuenta una vez por país"
+      hint="Un título multipaís cuenta una vez por país"
       level={1}
       className={styles.card}
     >
