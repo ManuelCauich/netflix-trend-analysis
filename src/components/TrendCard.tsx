@@ -17,7 +17,7 @@ export function TrendCard({ series, mode, yearRange, total }: TrendCardProps) {
 
   return (
     <Card
-      title={isRelease ? "Evolución de estrenos por año" : "Evolución de ingresos por año"}
+      title={isRelease ? "Evolución de estrenos por año" : "Evolución de ingresos al catálogo por año"}
       hint={`${isRelease ? "Año de estreno" : "Año de ingreso al catálogo"} · ${formatNumber(total)} títulos en el rango`}
       className={styles.card}
     >

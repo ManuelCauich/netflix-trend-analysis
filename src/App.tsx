@@ -190,8 +190,8 @@ export default function App() {
         </p>
         <p>
           {filters.yearMode === "added" && views.missingAdded > 0
-            ? `${views.missingAdded} títulos sin fecha de ingreso quedan fuera del modo Ingreso.`
-            : `Modo ${filters.yearMode === "release" ? "Estreno" : "Ingreso"} · año de referencia del eje temporal.`}
+            ? `${views.missingAdded} títulos sin fecha de ingreso quedan fuera del modo Ingreso al catálogo.`
+            : `Modo ${filters.yearMode === "release" ? "Estreno" : "Ingreso al catálogo"} · año de referencia del eje temporal.`}
         </p>
       </footer>
     </div>

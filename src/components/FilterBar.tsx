@@ -89,7 +89,7 @@ export function FilterBar({
           </div>
         </div>
 
-        <div className={styles.field}>
+        <div className={`${styles.field} ${styles.modeField}`}>
           <span className={styles.label} id="filter-mode-label">
             Año de referencia
           </span>
@@ -112,7 +112,7 @@ export function FilterBar({
               aria-pressed={filters.yearMode === "added"}
               onClick={() => setMode("added")}
             >
-              Ingreso
+              Ingreso al catálogo
             </button>
           </div>
         </div>
@@ -205,6 +205,12 @@ export function FilterBar({
           </p>
         </div>
       </div>
+
+      <p className={styles.modeHelp}>
+        <strong>Estreno</strong> usa el año de estreno del título.{" "}
+        <strong>Ingreso al catálogo</strong> usa la fecha en que se añadió a
+        Netflix; no es su año de estreno.
+      </p>
 
       <div className={styles.footer}>
         <p className={styles.count} aria-live="polite">

@@ -13,10 +13,10 @@ const HEIGHT = 330;
 const ANTARCTICA = "010";
 
 const MAP_STEPS = [
-  { limit: 0.05, color: "var(--map-1)", label: "Menos" },
+  { limit: 0.05, color: "var(--map-1)", label: "Menos títulos" },
   { limit: 0.2, color: "var(--map-2)", label: "" },
   { limit: 0.5, color: "var(--map-3)", label: "" },
-  { limit: 1, color: "var(--map-4)", label: "Más" },
+  { limit: 1, color: "var(--map-4)", label: "Más títulos" },
 ];
 
 function stepColor(value: number, max: number): string {
@@ -204,18 +204,31 @@ export function CountryMap({
         </div>
       ) : null}
 
-      <div className={styles.legend}>
-        <span>{MAP_STEPS[0]?.label}</span>
-        <span className={styles.swatch} style={{ background: "var(--map-0)" }} title="Sin títulos" />
-        {MAP_STEPS.map((step) => (
+      <div className={styles.legend} aria-label="Leyenda de títulos por país">
+        <span className={styles.legendGroup}>
           <span
-            key={step.color}
             className={styles.swatch}
-            style={{ background: step.color }}
+            style={{ background: "var(--map-0)" }}
+            aria-hidden="true"
           />
-        ))}
-        <span>{MAP_STEPS[MAP_STEPS.length - 1]?.label}</span>
-        <span className={styles.legendNote}>Gris: sin títulos o sin datos</span>
+          <span>0 títulos</span>
+        </span>
+        <span className={styles.legendGroup}>
+          <span>1</span>
+          <span className={styles.swatches} aria-hidden="true">
+            {MAP_STEPS.map((step) => (
+              <span
+                key={step.color}
+                className={styles.swatch}
+                style={{ background: step.color }}
+              />
+            ))}
+          </span>
+          <span>{formatNumber(max)} títulos</span>
+        </span>
+        <span className={styles.legendNote}>
+          N.º de títulos · Escala relativa al máximo ({formatNumber(max)})
+        </span>
       </div>
     </div>
   );

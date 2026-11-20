@@ -37,7 +37,7 @@
 
 .hint {
   margin-top: 1px;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
 }
 
@@ -52,7 +52,7 @@
 
 .body > details > summary {
   cursor: pointer;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   margin-top: 6px;
 }
@@ -73,4 +73,12 @@
 .body > details th:last-child {
   text-align: right;
   font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 639px) {
+  .hint,
+  .body > details > summary,
+  .body > details table {
+    font-size: 0.8125rem;
+  }
 }

@@ -16,6 +16,9 @@ export function Header({ mode, rows, generatedAt }: HeaderProps) {
         <p className={styles.subtitle}>
           Qué produce y qué incorpora la plataforma: países, géneros y evolución por año.
         </p>
+        <p className={styles.guide}>
+          Empieza por el mapa; los filtros acotan país, año, género y tipo.
+        </p>
       </div>
 
       <div className={styles.meta}>

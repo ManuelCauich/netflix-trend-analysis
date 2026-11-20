@@ -37,7 +37,7 @@
 .list {
   display: grid;
   gap: 4px;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   line-height: 1.5;
 }
@@ -56,5 +56,11 @@
 @media (max-width: 639px) {
   .card {
     grid-column: span 1;
+  }
+
+  .summary,
+  .list,
+  .heading {
+    font-size: 0.8125rem;
   }
 }

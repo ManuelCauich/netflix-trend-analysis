@@ -8,7 +8,7 @@
 }
 
 .eyebrow {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -29,6 +29,15 @@
   font-size: 0.8125rem;
 }
 
+.guide {
+  margin-top: 6px;
+  padding-left: 8px;
+  border-left: 2px solid var(--accent);
+  max-width: 65ch;
+  font-size: 0.8125rem;
+  color: var(--text);
+}
+
 .meta {
   text-align: right;
 }
@@ -46,4 +55,16 @@
   background: color-mix(in srgb, var(--secondary) 12%, transparent);
   color: var(--text);
   font-size: 0.75rem;
+}
+
+@media (max-width: 639px) {
+  .meta {
+    text-align: left;
+  }
+
+  .eyebrow,
+  .guide,
+  .badge {
+    font-size: 0.8125rem;
+  }
 }

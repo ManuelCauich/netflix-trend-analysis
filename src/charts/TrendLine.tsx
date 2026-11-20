@@ -51,7 +51,7 @@ export function TrendLine({ series, mode, yearRange }: TrendLineProps) {
           }}
           labelStyle={{ color: "var(--text-muted)" }}
           labelFormatter={(year) =>
-            `${mode === "release" ? "Estrenos" : "Ingresos"} en ${String(year)}`
+            `${mode === "release" ? "Estrenos" : "Ingresos al catálogo"} en ${String(year)}`
           }
           formatter={(value) => [formatNumber(Number(value)), "Títulos"]}
         />

@@ -57,8 +57,8 @@ export function CountryMapCard({
 
   return (
     <Card
-      title="Títulos por país"
-      hint="Un título multipaís cuenta una vez por país"
+      title="Títulos por país de producción"
+      hint="Cada título cuenta una vez por país productor; si es multipaís, suma en cada uno"
       level={1}
       className={styles.card}
     >

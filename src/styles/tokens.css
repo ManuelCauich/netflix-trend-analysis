@@ -9,10 +9,10 @@
   --border: #333333;
 
   /* Escala de color del mapa coroplético */
-  --map-0: #242424;
-  --map-1: #4a1418;
-  --map-2: #7a1a1f;
-  --map-3: #a8151c;
+  --map-0: #282828;
+  --map-1: #5e1c22;
+  --map-2: #8a1921;
+  --map-3: #b8141b;
   --map-4: #e50914;
 
   --radius: 8px;

@@ -14,6 +14,18 @@
   align-items: end;
 }
 
+.modeHelp {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.modeHelp strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .field {
   display: grid;
   gap: 4px;
@@ -21,7 +33,7 @@
 }
 
 .label {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
@@ -122,7 +134,7 @@
 }
 
 .activeLabel {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   color: var(--secondary);
 }
 
@@ -141,7 +153,7 @@
   border-radius: 999px;
   background: color-mix(in srgb, var(--secondary) 14%, transparent);
   color: var(--text);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 .chip:hover {
@@ -150,7 +162,7 @@
 
 .noFilters {
   color: var(--text-muted);
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
 }
 
 .clear {
@@ -169,4 +181,55 @@
 .clear:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+@media (max-width: 639px) {
+  .controls {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .modeField {
+    grid-column: 1 / -1;
+  }
+
+  .segmented {
+    display: flex;
+    width: 100%;
+  }
+
+  .segment {
+    flex: 1;
+    text-align: center;
+    padding: 6px 8px;
+    font-size: 0.8125rem;
+  }
+
+  .range {
+    width: 100%;
+  }
+
+  .select {
+    font-size: 0.8125rem;
+    padding: 6px 8px;
+  }
+
+  .label,
+  .modeHelp,
+  .activeLabel,
+  .chip,
+  .noFilters,
+  .clear {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  .controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .modeField {
+    grid-column: 1 / -1;
+  }
 }
